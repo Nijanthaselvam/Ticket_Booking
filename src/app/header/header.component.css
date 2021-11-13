@@ -1,0 +1,44 @@
+.header{
+    background-color: #D84F57;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    width:100%
+}
+
+.container2{
+    display: flex;
+    flex-direction: row;
+     align-items: center; 
+     position: relative;
+     width: 99.5%;
+    
+}
+
+h1{
+    text-shadow: 2px 2px 2px gray;
+}
+
+.nav{
+  margin-left: 3%;
+}
+
+.nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+}
+
+.nav ul li a{
+    font-size: 16px;
+    color: white;
+    margin-right: 20px;
+}
+
+.logo{
+    margin-left: 25px;
+}
+
+
+
+

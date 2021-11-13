@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="bus-container">
+        <button class="btn" (click)="viewBusSeats()">View Seats</button>
+    </div>
+</div>
+
+<div class="bus-seats-container" [style.height]="height">
+    <div class="seat-div" *ngFor="let i of seatArr" (click)="seatSelect(i)" [style.background-color]="seatbg[i]">{{i}}
+    </div>
+
+</div>
+
+<div class="book-container">
+    <button class="btn2" (click)="bookticket()" [style.display]="displayBookBtn">BOOK</button>
+</div>
+
+

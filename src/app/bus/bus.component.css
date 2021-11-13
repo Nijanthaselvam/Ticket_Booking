@@ -1,0 +1,32 @@
+.bus-container{
+    width:60%;
+    height: 180px;
+   
+    margin-left: 280px;
+    margin-top: 100px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+    
+
+
+.bus-seats-container{
+    width:60%;
+    height: 0;
+    transition: all .8s ease;
+    background-color: lightgrey;
+     overflow: hidden; 
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 280px;
+}
+
+.seat-div{
+    height: 40px;
+    width: 40px;
+    border: 1px solid;
+    margin:30px;
+}
+
