@@ -1,7 +1,9 @@
 .bus-container{
     width:60%;
     height: 180px;
-   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     margin-left: 280px;
     margin-top: 100px;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
@@ -29,4 +31,57 @@
     border: 1px solid;
     margin:30px;
 }
+
+.btn2{
+  margin-left: 700px;
+  height: 30px;
+  width: 70px;
+  margin-top: 30px;
+  border: none;
+}
+
+.btn2:hover{
+     background-color: #7ee8fa;
+    background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+    
+}
+
+.btn{
+    background-color:  #eb2d53;
+    color:white;
+    border: none;
+    height: 28px;
+    width: 90px;
+    margin-left: 590px;
+    margin-top: 8px;
+
+}
+
+.btn:hover{
+    background-color:  #f05c79;
+}
+
+.primo{
+    margin-left: 15px;
+}
+
+
+.txt{
+    font-family:Verdana;
+    margin-left: 15px;
+
+}
+
+.sleeper{
+    margin-left: 15px;
+    margin-top: 30px;
+    color:gray;
+}
+
+.col1{
+    width:30%
+}
+
+
+
 

@@ -24,8 +24,13 @@ export class BusComponent implements OnInit {
 
 
   ngOnInit(): void {
-    
-    this.seatbg = localStorage.getItem("bus")?.split(",")
+    let temp = localStorage.getItem("bus");
+    if (!temp) {
+      alert("Nothing in local storage");
+      return;
+    }
+
+    this.seatbg = temp.split(",")
     console.log(this.seatbg);
   }
   viewBusSeats() {
@@ -43,10 +48,10 @@ export class BusComponent implements OnInit {
     if (this.seatbg[color] == "green") {
       alert("Already Booked");
       return;
-      
+
     };
 
-    if (this.selectedSeatCount < 6  ) {
+    if (this.selectedSeatCount < 6) {
       if (!this.seatbg[color]) {
         this.seatbg[color] = "orange";
         this.selectedSeatCount++;
@@ -57,6 +62,7 @@ export class BusComponent implements OnInit {
       else {
         this.seatbg[color] = ""
         this.selectedSeatCount--;
+
       }
     }
     else {
@@ -72,7 +78,7 @@ export class BusComponent implements OnInit {
       }
     }
     this.selectedSeatCount = 0;
-    localStorage.setItem("bus",this.seatbg.toString())
+    localStorage.setItem("bus", this.seatbg.toString());
 
   }
 }

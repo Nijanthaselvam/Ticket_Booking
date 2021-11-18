@@ -10,7 +10,7 @@
 }
 
 .nav{
-    margin:250px 0px 0px 350px;
+    margin:250px 0px 0px 260px;
     
 }
 .input1{
@@ -43,7 +43,7 @@
     height: 100vh;
     
     background-image: url("https://st.redbus.in/Images/HomeIndia/nataknew.png");
-    background-size: 1510px 500px;
+    background-size: 1250px 500px;
     background-repeat: no-repeat;
     position: absolute;
     margin-top: -70px;
